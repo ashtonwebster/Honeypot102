@@ -1,0 +1,37 @@
+Apr  7 00:01:11 hp rootsh[00483]: root: 003: 
+Apr  7 00:01:11 hp rootsh[00483]: root: root,/dev/pts/3: closing rootsh session (rootsh[00483])
+Apr  7 00:01:16 hp ssh-wrapper: root login from 129.2.129.226
+Apr  7 00:01:21 hp sendmail[1189]: s3741LoW001189: from=root, size=65, class=0, nrcpts=1, msgid=<201404070401.s3741LoW001189@hp>, relay=root@localhost
+Apr  7 00:01:21 hp sm-mta[1190]: s3741La5001190: from=<root@hp>, size=307, class=0, nrcpts=1, msgid=<201404070401.s3741LoW001189@hp>, proto=ESMTP, daemon=MTA-v4, relay=localhost [127.0.0.1]
+Apr  7 00:01:21 hp sendmail[1189]: s3741LoW001189: to=groupkrules@gmail.com, ctladdr=root (0/0), delay=00:00:00, xdelay=00:00:00, mailer=relay, pri=30065, relay=[127.0.0.1] [127.0.0.1], dsn=2.0.0, stat=Sent (s3741La5001190 Message accepted for delivery)
+Apr  7 00:01:22 hp rootsh[004b3]: root: root=root,/dev/pts/0: logging new session (rootsh[004b3]) to /var/log/root.20140407000122.004b3
+Apr  7 00:01:27 hp sm-mta[1192]: STARTTLS=client, relay=gmail-smtp-in.l.google.com., version=TLSv1/SSLv3, verify=FAIL, cipher=ECDHE-RSA-RC4-SHA, bits=128/128
+Apr  7 00:01:27 hp sm-mta[1192]: s3741La5001190: to=<groupkrules@gmail.com>, ctladdr=<root@hp> (0/0), delay=00:00:06, xdelay=00:00:06, mailer=esmtp, pri=120307, relay=gmail-smtp-in.l.google.com. [173.194.68.27], dsn=2.0.0, stat=Sent (OK 1396843291 i1si182063qab.21 - gsmtp)
+Apr  7 10:31:03 hp syslogd 1.5.0#6.2ubuntu1: restart.
+Apr  7 10:31:20 hp sm-mta[452]: gethostbyaddr(128.8.37.118) failed: 1
+Apr  7 10:31:20 hp sm-mta[454]: starting daemon (8.14.4): SMTP+queueing@00:10:00
+Apr  7 10:40:01 hp CRON[564]: (smmsp) CMD (test -x /etc/init.d/sendmail && /usr/share/sendmail/sendmail cron-msp)
+Apr  7 10:40:06 hp ssh-wrapper: root login from 183.57.38.212
+Apr  7 10:40:06 hp sendmail[591]: s37Ee6Nx000591: from=root, size=65, class=0, nrcpts=1, msgid=<201404071440.s37Ee6Nx000591@hp>, relay=root@localhost
+Apr  7 10:40:06 hp sm-mta[592]: s37Ee6xn000592: from=<root@hp>, size=307, class=0, nrcpts=1, msgid=<201404071440.s37Ee6Nx000591@hp>, proto=ESMTP, daemon=MTA-v4, relay=localhost [127.0.0.1]
+Apr  7 10:40:06 hp sendmail[591]: s37Ee6Nx000591: to=groupkrules@gmail.com, ctladdr=root (0/0), delay=00:00:00, xdelay=00:00:00, mailer=relay, pri=30065, relay=[127.0.0.1] [127.0.0.1], dsn=2.0.0, stat=Sent (s37Ee6xn000592 Message accepted for delivery)
+Apr  7 10:40:12 hp sm-mta[594]: STARTTLS=client, relay=gmail-smtp-in.l.google.com., version=TLSv1/SSLv3, verify=FAIL, cipher=ECDHE-RSA-RC4-SHA, bits=128/128
+Apr  7 10:40:12 hp sm-mta[594]: s37Ee6xn000592: to=<groupkrules@gmail.com>, ctladdr=<root@hp> (0/0), delay=00:00:06, xdelay=00:00:06, mailer=esmtp, pri=120307, relay=gmail-smtp-in.l.google.com. [173.194.68.27], dsn=2.0.0, stat=Sent (OK 1396881616 p17si6783234qgp.95 - gsmtp)
+Apr  7 10:40:23 hp ssh-wrapper: root login from 183.57.38.212
+Apr  7 10:40:23 hp sendmail[606]: s37EeNsE000606: from=root, size=65, class=0, nrcpts=1, msgid=<201404071440.s37EeNsE000606@hp>, relay=root@localhost
+Apr  7 10:40:23 hp sm-mta[607]: s37EeNx2000607: from=<root@hp>, size=307, class=0, nrcpts=1, msgid=<201404071440.s37EeNsE000606@hp>, proto=ESMTP, daemon=MTA-v4, relay=localhost [127.0.0.1]
+Apr  7 10:40:23 hp sendmail[606]: s37EeNsE000606: to=groupkrules@gmail.com, ctladdr=root (0/0), delay=00:00:00, xdelay=00:00:00, mailer=relay, pri=30065, relay=[127.0.0.1] [127.0.0.1], dsn=2.0.0, stat=Sent (s37EeNx2000607 Message accepted for delivery)
+Apr  7 10:40:29 hp sm-mta[609]: STARTTLS=client, relay=gmail-smtp-in.l.google.com., version=TLSv1/SSLv3, verify=FAIL, cipher=ECDHE-RSA-RC4-SHA, bits=128/128
+Apr  7 10:40:29 hp sm-mta[609]: s37EeNx2000607: to=<groupkrules@gmail.com>, ctladdr=<root@hp> (0/0), delay=00:00:06, xdelay=00:00:06, mailer=esmtp, pri=120307, relay=gmail-smtp-in.l.google.com. [173.194.68.27], dsn=2.0.0, stat=Sent (OK 1396881633 d4si2627317qar.248 - gsmtp)
+Apr  7 10:41:27 hp ssh-wrapper: root login from 183.57.38.212
+Apr  7 10:41:27 hp sendmail[620]: s37EfRLw000620: from=root, size=65, class=0, nrcpts=1, msgid=<201404071441.s37EfRLw000620@hp>, relay=root@localhost
+Apr  7 10:41:27 hp sm-mta[621]: s37EfRX4000621: from=<root@hp>, size=307, class=0, nrcpts=1, msgid=<201404071441.s37EfRLw000620@hp>, proto=ESMTP, daemon=MTA-v4, relay=localhost [127.0.0.1]
+Apr  7 10:41:27 hp sendmail[620]: s37EfRLw000620: to=groupkrules@gmail.com, ctladdr=root (0/0), delay=00:00:00, xdelay=00:00:00, mailer=relay, pri=30065, relay=[127.0.0.1] [127.0.0.1], dsn=2.0.0, stat=Sent (s37EfRX4000621 Message accepted for delivery)
+Apr  7 10:41:29 hp ssh-wrapper: root login from 183.57.38.212
+Apr  7 10:41:29 hp sendmail[633]: s37EfTYc000633: from=root, size=65, class=0, nrcpts=1, msgid=<201404071441.s37EfTYc000633@hp>, relay=root@localhost
+Apr  7 10:41:29 hp sm-mta[634]: s37EfTRq000634: from=<root@hp>, size=307, class=0, nrcpts=1, msgid=<201404071441.s37EfTYc000633@hp>, proto=ESMTP, daemon=MTA-v4, relay=localhost [127.0.0.1]
+Apr  7 10:41:29 hp sendmail[633]: s37EfTYc000633: to=groupkrules@gmail.com, ctladdr=root (0/0), delay=00:00:00, xdelay=00:00:00, mailer=relay, pri=30065, relay=[127.0.0.1] [127.0.0.1], dsn=2.0.0, stat=Sent (s37EfTRq000634 Message accepted for delivery)
+Apr  7 10:41:32 hp sm-mta[623]: STARTTLS=client, relay=gmail-smtp-in.l.google.com., version=TLSv1/SSLv3, verify=FAIL, cipher=ECDHE-RSA-RC4-SHA, bits=128/128
+Apr  7 10:41:32 hp sm-mta[623]: s37EfRX4000621: to=<groupkrules@gmail.com>, ctladdr=<root@hp> (0/0), delay=00:00:05, xdelay=00:00:05, mailer=esmtp, pri=120307, relay=gmail-smtp-in.l.google.com. [173.194.68.27], dsn=2.0.0, stat=Sent (OK 1396881697 a3si6724482qat.189 - gsmtp)
+Apr  7 10:41:34 hp sm-mta[636]: STARTTLS=client, relay=gmail-smtp-in.l.google.com., version=TLSv1/SSLv3, verify=FAIL, cipher=ECDHE-RSA-RC4-SHA, bits=128/128
+Apr  7 10:41:34 hp sm-mta[636]: s37EfTRq000634: to=<groupkrules@gmail.com>, ctladdr=<root@hp> (0/0), delay=00:00:05, xdelay=00:00:05, mailer=esmtp, pri=120307, relay=gmail-smtp-in.l.google.com. [173.194.68.27], dsn=2.0.0, stat=Sent (OK 1396881699 h61si5210290qgf.197 - gsmtp)

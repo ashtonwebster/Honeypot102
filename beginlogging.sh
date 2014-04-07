@@ -1,4 +1,8 @@
 #!/bin/bash
+
+#tails the log files, which means all modifications will be routed to the new file
+#which is saved on the hpvm instead of the hp container
+
 logfile=$1
 message=$(cat ismessage)
 echo message: $message

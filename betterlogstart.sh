@@ -1,3 +1,7 @@
+#sleeps until the lastlogin file is modified.  This occurs when an attacker gains access.
+#1800 seconds later it reimages (30 minutes).  There is a 50% chance of message in the 
+#next login.
+
 ./sleep_until_modified.sh /vz/private/101/var/log/lastlog
 vz=101
 echo there are users online, to be kicked in 4 hours
@@ -8,6 +12,7 @@ sleep 1800 #sleep 4 hours
 ./killlogging.sh 
 ./rotate.sh /home/hp/scripts/logfiles
 boolean=`expr $RANDOM % 2`
+#ismessages saves whether the honeypot currently has a message or not
 echo $boolean > home/hp/scripts/ismessage	
 if [ $boolean == 1 ]
 	then 
@@ -42,4 +47,5 @@ if [ $boolean == 1 ]
                         echo not a valid ctid
        fi
 fi
-./betterlogstart.sh
+#important to run this in the background so you don't forkbomb
+./betterlogstart.sh &

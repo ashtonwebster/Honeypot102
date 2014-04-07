@@ -1,5 +1,5 @@
 #!/bin/sh -e
-#
+# Bertrands script
 # Super fancy Firewall 
 #
 

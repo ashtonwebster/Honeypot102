@@ -1,6 +1,7 @@
 #!/bin/bash
 #Bobby Crumbaugh
 #reimaging the machine
+#backs up the current hp container and restores from the base backup
 backup=$1
 vz=$2
 outputfile="/home/hp/scripts/txtfiles/backupresults.txt"

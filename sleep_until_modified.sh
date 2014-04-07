@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#i found this script online and it sleeps until a file is modified.  The file is passed 
+# in as the first argument
+
+
 SCRIPTNAME=`basename "$0"`
 
 print_help() {

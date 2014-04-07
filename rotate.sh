@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#kills the logging and pushes the changes to the data vm, deleting the local copies
+
 #stop logging
 logfile=$1
 datavm=data@192.168.1.21

