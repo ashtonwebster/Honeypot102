@@ -1,0 +1,14 @@
+Apr  7 10:00:01 hp snoopy[1678]: [uid:107 sid:1675 tty: cwd:/var/lib/sendmail filename:/bin/run-parts]: run-parts --lsbsysinit --list /lib/lsb/init-functions.d 
+Apr  7 10:00:01 hp snoopy[1681]: [uid:107 sid:1675 tty: cwd:/var/lib/sendmail filename:/usr/bin/tr]: tr [:upper:] [:lower:] 
+Apr  7 10:00:01 hp snoopy[1684]: [uid:107 sid:1675 tty: cwd:/var/lib/sendmail filename:/usr/bin/tr]: tr [:upper:] [:lower:] 
+Apr  7 10:00:01 hp snoopy[1687]: [uid:107 sid:1675 tty: cwd:/var/lib/sendmail filename:/usr/bin/tr]: tr [:upper:] [:lower:] 
+Apr  7 10:00:01 hp snoopy[1688]: [uid:107 sid:1675 tty: cwd:/var/lib/sendmail filename:/usr/bin/basename]: basename /usr/share/sendmail/sendmail 
+Apr  7 10:00:01 hp snoopy[1689]: [uid:107 sid:1675 tty: cwd:/var/lib/sendmail filename:/bin/grep]: grep -qEe ^[[:space:]]*`?FEATURE\([[:space:]]*`?msp /etc/mail/submit.mc 
+Apr  7 10:00:01 hp snoopy[1690]: [uid:107 sid:1675 tty: cwd:/var/lib/sendmail filename:/bin/touch]: touch /var/run/sendmail/stampdir/cron_msp 
+Apr  7 10:00:01 hp snoopy[1691]: [uid:107 sid:1675 tty: cwd:/var/lib/sendmail filename:/usr/sbin/sendmail-msp]: /usr/sbin/sendmail-msp -qf -Ac -L sm-msp-queue 
+Apr  7 10:00:01 hp snoopy[1692]: [uid:107 sid:1675 tty: cwd:/var/lib/sendmail filename:/bin/rm]: rm -f /var/run/sendmail/stampdir/cron_msp 
+Apr  7 10:00:01 hp CRON[1674]: pam_unix(cron:session): session closed for user smmsp
+Apr  7 10:17:01 hp CRON[1695]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr  7 10:17:01 hp CRON[1695]: pam_unix(cron:session): session opened for user root by (uid=0)
+Apr  7 10:17:01 hp snoopy[1697]: [uid:0 sid:1696 tty: cwd:/ filename:/bin/run-parts]: run-parts --report /etc/cron.hourly 
+Apr  7 10:17:01 hp CRON[1695]: pam_unix(cron:session): session closed for user root

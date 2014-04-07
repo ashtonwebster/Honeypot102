@@ -1,0 +1,176 @@
+3
+-----------------------
+Fri Apr  4 11:25:29 EDT 2014
+ 11:25:29 up 12:57,  0 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+0
+users online 0
+user ip addresses
+3
+-----------------------
+Fri Apr  4 11:25:56 EDT 2014
+ 11:25:56 up 12:58,  0 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+0
+users online 0
+user ip addresses
+3
+-----------------------
+Fri Apr  4 11:25:59 EDT 2014
+ 11:25:59 up 12:58,  0 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+0
+users online 0
+user ip addresses
+3
+-----------------------
+Fri Apr  4 11:26:02 EDT 2014
+ 11:26:02 up 12:58,  0 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+0
+users online 0
+user ip addresses
+3
+-----------------------
+Fri Apr  4 11:26:05 EDT 2014
+ 11:26:05 up 12:58,  0 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+0
+users online 0
+user ip addresses
+3
+-----------------------
+Fri Apr  4 11:26:08 EDT 2014
+ 11:26:08 up 12:58,  0 users,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+0
+users online 0
+user ip addresses
+3
+-----------------------
+Fri Apr  4 11:26:12 EDT 2014
+ 11:26:12 up 12:58,  1 user,  load average: 0.00, 0.00, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+root     pts/0    129-2-129-226.wi 11:26    3.00s  0.01s  0.00s rootsh
+1
+users online 1
+user ip addresses
+there are users online, to be kicked in 4 hours
+0
+reimaging WITHOUT MESSAGE
+/home/hp/scripts/txtfiles/backupresults.txt
+starting backup
+Fri Apr  4 11:26:22 EDT 2014
+CTID 101 exist mounted running
+Stopping container ...
+Container was stopped
+INFO: starting new backup job: vzdump --maxfiles 20 --compress --stop 101
+INFO: Starting Backup of VM 101 (openvz)
+INFO: CTID 101 exist unmounted down
+INFO: status = CTID 101 exist unmounted down
+INFO: backup mode: stop
+INFO: bandwidth limit: 10240 KB/s
+INFO: creating archive '/vz/dump/vzdump-openvz-101-2014_04_04-11_26_33.tgz'
+INFO: Total bytes written: 746301440 (712MiB, 12MiB/s)
+INFO: archive file size: 260MB
+INFO: delete old backup '/vz/dump/vzdump-openvz-101-2014_04_02-01_42_43.tgz'
+INFO: Finished Backup of VM 101 (00:01:04)
+INFO: Backup job finished successfuly
+writing to /vz/dump/vzdump-openvz-101-2014_04_04-11_26_33.tgz
+Destroying container private area: /vz/private/101
+Container private area was destroyed
+INFO: restore openvz backup '/vz/dump/vzdump-101-base-backup.tgz' using ID 101
+INFO: extracting archive '/vz/dump/vzdump-101-base-backup.tgz'
+INFO: Total bytes read: 745707520 (712MiB, 51MiB/s)
+INFO: extracting configuration to '/etc/vz/conf/101.conf'
+INFO: restore openvz backup '/vz/dump/vzdump-101-base-backup.tgz' successful
+Starting container...
+Initializing quota ...
+Container is mounted
+Setting CPU units: 1000
+Configure veth devices: veth101.0 
+Container start in progress...
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+DROP       all  --  129.2.129.226        anywhere            
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+DROP       all  --  129.2.129.226        anywhere            
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+stopping backup
+Fri Apr  4 11:28:10 EDT 2014
+3
+-----------------------
+Fri Apr  4 11:28:10 EDT 2014
+ 11:28:10 up 0 min,  0 users,  load average: 0.07, 0.02, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+0
+users online 0
+user ip addresses
+3
+-----------------------
+Fri Apr  4 11:28:14 EDT 2014
+ 11:28:14 up 0 min,  0 users,  load average: 0.06, 0.02, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+0
+users online 0
+user ip addresses
+3
+-----------------------
+Fri Apr  4 11:28:17 EDT 2014
+ 11:28:17 up 0 min,  0 users,  load average: 0.06, 0.02, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+0
+users online 0
+user ip addresses
+3
+-----------------------
+Fri Apr  4 11:28:20 EDT 2014
+ 11:28:20 up 0 min,  0 users,  load average: 0.06, 0.01, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+0
+users online 0
+user ip addresses
+4
+-----------------------
+Fri Apr  4 11:28:23 EDT 2014
+ 11:28:23 up 0 min,  0 users,  load average: 0.05, 0.01, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+0
+users online 0
+user ip addresses
+4
+-----------------------
+Fri Apr  4 11:28:26 EDT 2014
+ 11:28:27 up 0 min,  0 users,  load average: 0.05, 0.01, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+0
+users online 0
+user ip addresses
+4
+-----------------------
+Fri Apr  4 11:28:30 EDT 2014
+ 11:28:30 up 0 min,  0 users,  load average: 0.05, 0.01, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+0
+users online 0
+user ip addresses
+4
+-----------------------
+Fri Apr  4 11:28:33 EDT 2014
+ 11:28:33 up 0 min,  0 users,  load average: 0.05, 0.01, 0.00
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+0
+users online 0
+user ip addresses

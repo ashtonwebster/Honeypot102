@@ -1,0 +1,10 @@
+starting ping script for container: ./vzcheckinternet
+Sun Mar 30 16:21:38 EDT 2014
+success, all packets received
+stopping ping script
+Sun Mar 30 16:21:38 EDT 2014
+starting ping script for container: 101
+Sun Mar 30 16:22:02 EDT 2014
+success, all packets received
+stopping ping script
+Sun Mar 30 16:22:22 EDT 2014

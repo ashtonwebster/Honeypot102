@@ -1,0 +1,14 @@
+#!/bin/bash
+vz=$1
+val=$(du file | awk {'print $1'})
+echo $val
+if [ "$val" -gt "1000000"  ]; 
+then
+	pids=ps -ef | grep tcpdump | awk {'print $2'}
+	#gets the pids
+	#grep for tcp dump in ps
+	kill $pids
+	#kill tcpdump
+	#reimage 
+	#./reimage $vz
+fi
