@@ -4,23 +4,21 @@
 #which is saved on the hpvm instead of the hp container
 
 logfile=$1
-message=$(cat ismessage)
-echo message: $message
+vz=$2
 if [ -z "$logfile" ]
 then
 	echo invalid args
-	echo ./beginlogging logfile message
+	echo ./beginlogging logifle ctid
 	exit
 fi
-if [ -z "$message" ]
+if [ -z "vz" ]
 then
         echo invalid args
+	echo ./beginlooging logfile ctid
         exit
 fi
 filename=$(date | cut -d" " -f1-5 | perl -i -pe "s/ /_/g")
-tail -f /vz/private/101/var/log/syslog >>  $logfile/syslog_"$message"_101_$filename.log &
-tail -f /vz/private/102/var/log/syslog >> $logfile/syslog_"$message"_102_$filename.log &
-touch $logfile/
-tail -f /vz/private/101/var/log/auth.log >> $logfile/auth_"$message"_101_$filename.log &
-tail -f /vz/private/102/var/log/auth.log >> $logfile/auth_"$message"_102_$filename.log &
-tcpdump >> $logfile/tcpdump_"$message"_$filename.log &
+mkdir $logfile/attacks
+tail -f /vz/private/$vz/var/log/syslog >>  $logfile/syslog_"$vz"_$filename.log &
+tail -f /vz/private/$vz/var/log/auth.log >> $logfile/auth_"$vz"_$filename.log &
+tcpdump >> $logfile/tcpdump_$filename.log &

@@ -20,7 +20,7 @@ then
 	echo ./reimage {backup_file} {ctid}
 	exit
 fi
-
+./killlogging.sh logfiles
 echo "----------------------------------"  >> $outputfile
 echo "starting backup" | tee "$outputfile" 
 date | tee "$outputfile" 
@@ -31,7 +31,7 @@ then
 else
 	sudo vzctl status $vz | tee "$outputfile" 
 	sudo vzctl stop $vz | tee "$outputfile" 
-	sudo vzdump --maxfiles 2 --compress --stop $vz | tee "$outputfile" 
+	#sudo vzdump --maxfiles 5 --compress --stop $vz | tee "$outputfile" 
 
 	backupname=$(grep /vz/dump/vzdump-openvz-$vz txtfiles/backupresults.txt | head -n 1 | cut -d" " -f4 | perl -i -pe "s/'//g")
 	if [ "$backupname" ]

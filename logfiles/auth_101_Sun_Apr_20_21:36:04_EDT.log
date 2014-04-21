@@ -1,0 +1,24 @@
+Apr 20 21:30:44 hp snoopy[548]: [uid:0 sid:548 tty: cwd:/ filename:/usr/local/sbin/startpar-upstart-inject]: startpar-upstart-inject plymouth  stopped 
+Apr 20 21:30:44 hp snoopy[548]: [uid:0 sid:548 tty: cwd:/ filename:/usr/local/bin/startpar-upstart-inject]: startpar-upstart-inject plymouth  stopped 
+Apr 20 21:30:44 hp snoopy[548]: [uid:0 sid:548 tty: cwd:/ filename:/usr/bin/startpar-upstart-inject]: startpar-upstart-inject plymouth  stopped 
+Apr 20 21:30:44 hp snoopy[548]: [uid:0 sid:548 tty: cwd:/ filename:/usr/sbin/startpar-upstart-inject]: startpar-upstart-inject plymouth  stopped 
+Apr 20 21:30:44 hp snoopy[548]: [uid:0 sid:548 tty: cwd:/ filename:/sbin/startpar-upstart-inject]: startpar-upstart-inject plymouth  stopped 
+Apr 20 21:30:44 hp snoopy[549]: [uid:0 sid:549 tty: cwd:/ filename:/usr/local/sbin/startpar-upstart-inject]: startpar-upstart-inject plymouth-stop  stopped 
+Apr 20 21:30:44 hp snoopy[549]: [uid:0 sid:549 tty: cwd:/ filename:/usr/local/bin/startpar-upstart-inject]: startpar-upstart-inject plymouth-stop  stopped 
+Apr 20 21:30:44 hp snoopy[549]: [uid:0 sid:549 tty: cwd:/ filename:/usr/bin/startpar-upstart-inject]: startpar-upstart-inject plymouth-stop  stopped 
+Apr 20 21:30:44 hp snoopy[549]: [uid:0 sid:549 tty: cwd:/ filename:/usr/sbin/startpar-upstart-inject]: startpar-upstart-inject plymouth-stop  stopped 
+Apr 20 21:30:44 hp snoopy[549]: [uid:0 sid:549 tty: cwd:/ filename:/sbin/startpar-upstart-inject]: startpar-upstart-inject plymouth-stop  stopped 
+Apr 20 21:40:01 hp CRON[550]: pam_env(cron:session): Unable to open env file: /etc/default/locale: No such file or directory
+Apr 20 21:40:01 hp CRON[550]: pam_unix(cron:session): session opened for user smmsp by (uid=0)
+Apr 20 21:40:01 hp snoopy[552]: [uid:107 sid:551 tty: cwd:/var/lib/sendmail filename:/usr/share/sendmail/sendmail]: /usr/share/sendmail/sendmail cron-msp 
+Apr 20 21:40:01 hp snoopy[553]: [uid:107 sid:551 tty: cwd:/var/lib/sendmail filename:/bin/cat]: cat /proc/cmdline 
+Apr 20 21:40:01 hp snoopy[554]: [uid:107 sid:551 tty: cwd:/var/lib/sendmail filename:/bin/run-parts]: run-parts --lsbsysinit --list /lib/lsb/init-functions.d 
+Apr 20 21:40:01 hp snoopy[557]: [uid:107 sid:551 tty: cwd:/var/lib/sendmail filename:/usr/bin/tr]: tr [:upper:] [:lower:] 
+Apr 20 21:40:01 hp snoopy[560]: [uid:107 sid:551 tty: cwd:/var/lib/sendmail filename:/usr/bin/tr]: tr [:upper:] [:lower:] 
+Apr 20 21:40:01 hp snoopy[563]: [uid:107 sid:551 tty: cwd:/var/lib/sendmail filename:/usr/bin/tr]: tr [:upper:] [:lower:] 
+Apr 20 21:40:01 hp snoopy[564]: [uid:107 sid:551 tty: cwd:/var/lib/sendmail filename:/usr/bin/basename]: basename /usr/share/sendmail/sendmail 
+Apr 20 21:40:01 hp snoopy[565]: [uid:107 sid:551 tty: cwd:/var/lib/sendmail filename:/bin/grep]: grep -qEe ^[[:space:]]*`?FEATURE\([[:space:]]*`?msp /etc/mail/submit.mc 
+Apr 20 21:40:01 hp snoopy[566]: [uid:107 sid:551 tty: cwd:/var/lib/sendmail filename:/bin/touch]: touch /var/run/sendmail/stampdir/cron_msp 
+Apr 20 21:40:01 hp snoopy[567]: [uid:107 sid:551 tty: cwd:/var/lib/sendmail filename:/usr/sbin/sendmail-msp]: /usr/sbin/sendmail-msp -qf -Ac -L sm-msp-queue 
+Apr 20 21:40:01 hp snoopy[568]: [uid:107 sid:551 tty: cwd:/var/lib/sendmail filename:/bin/rm]: rm -f /var/run/sendmail/stampdir/cron_msp 
+Apr 20 21:40:01 hp CRON[550]: pam_unix(cron:session): session closed for user smmsp

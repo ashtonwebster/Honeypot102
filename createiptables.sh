@@ -74,11 +74,11 @@ done
 # To block som traffic for one honeypot, use the -d <HP Public IP> parameter 
 # for example: /sbin/iptables -A FORWARD -i br0 -d 128.8.37.122 -p tcp --dport 22 -j DROP  (will block SSH traffic to 128.8.37.122) 
 
-# CASE 1: Allow everything on br0 (to the Honeypots Containers) 
-#for i in $hpIPs;
-#do
-#        /sbin/iptables -A FORWARD -d $hpIPs -i br0 -j ACCEPT
-#done
+#CASE 1: Allow everything on br0 (to the Honeypots Containers) 
+for i in $hpIPs;
+do
+       /sbin/iptables -A FORWARD -d $i -i br0 -j ACCEPT
+done
 
 # CASE 2: Allow only certain ports
 for i in $hp_tcp;

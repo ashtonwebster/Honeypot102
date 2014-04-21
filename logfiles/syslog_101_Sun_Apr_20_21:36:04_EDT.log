@@ -1,0 +1,11 @@
+Apr 17 15:27:12 hp sm-mta[474]: gethostbyaddr(128.8.37.118) failed: 2
+Apr 17 15:27:12 hp sm-mta[527]: starting daemon (8.14.4): SMTP+queueing@00:10:00
+Apr 17 15:57:41 hp syslogd 1.5.0#6.2ubuntu1: restart.
+Apr 17 15:58:01 hp sm-mta[457]: gethostbyaddr(128.8.37.118) failed: 1
+Apr 17 15:58:01 hp sm-mta[459]: starting daemon (8.14.4): SMTP+queueing@00:10:00
+Apr 17 16:00:01 hp CRON[567]: (smmsp) CMD (test -x /etc/init.d/sendmail && /usr/share/sendmail/sendmail cron-msp)
+Apr 17 16:00:01 hp CRON[568]: (root) CMD (cd / && run-parts --report /etc/cron.hourly)
+Apr 20 21:30:21 hp syslogd 1.5.0#6.2ubuntu1: restart.
+Apr 20 21:30:41 hp sm-mta[455]: gethostbyaddr(128.8.37.118) failed: 1
+Apr 20 21:30:41 hp sm-mta[457]: starting daemon (8.14.4): SMTP+queueing@00:10:00
+Apr 20 21:40:01 hp CRON[551]: (smmsp) CMD (test -x /etc/init.d/sendmail && /usr/share/sendmail/sendmail cron-msp)
